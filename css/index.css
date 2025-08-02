@@ -1,0 +1,283 @@
+body {
+    background-color: #f5f5f5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h2, h3 {
+    color: #1E1E1E;
+}
+p {
+    color: #4E4E4E;
+}
+.navbar ul .active::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.5s;
+}
+.navbar ul .hov-link::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -3px;
+    left: 5%;
+    transition: width 0.5s;
+}
+.navbar ul .hov-link:hover::before {
+    width: 100%;
+}
+.logo {
+    font-size: 28px;
+    font-weight: 600;
+}
+#home {
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+h1 {
+    font-size: 72px;
+}
+/* ================================================================== */
+#about span{
+    color: #4E4E4E;
+}
+#about .about-desc h2::after{
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 17%;
+    height: 3px;
+    background-color: #0078FF;
+}
+.progress {
+    height: 0.7rem;
+    background-color: #CDE1F8;
+}
+/* ======================================================================= */
+#services h2 {
+    font-size: 48px;
+}
+#services .services-desc p::after {
+    content: '';
+    width: 11%;
+    height: 20%;
+    background-color: #0078FF;
+    position: absolute;
+    bottom: -80%;
+    left: 45%;
+}
+#services .cards .cards-item .inner .cards-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #0078ff;
+    transition: all 0.5s;
+}
+#services .cards .cards-item .inner:hover .cards-icon {
+    border-color: #CDE1F8;
+    background-color: #0078FF;
+    color: white;
+}
+#services .cards .cards-item .inner .cards-icon i {
+    font-size: 40px;
+}
+/* ========================================== */
+#percentage {
+    background-image: linear-gradient(rgb(0, 120, 255,0.6), rgb(0, 120, 255,0.6)), url(../images/counters-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#percentage .perc-item .perc-desc p{
+    color: white;
+}
+#percentage .perc-item .perc-desc span {
+    color: white;
+}
+#percentage .perc-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 10px solid #CDE1F8;
+    color: #ffffff;
+}
+/* ===================================================================== */
+#work .portfolio h2 {
+    font-size: 48px;
+}
+#work .portfolio p::after {
+    content: '';
+    width: 3%;
+    height: 20%;
+    background-color: #0078FF;
+    position: absolute;
+    bottom: -60%;
+    left: 49%;
+}
+#work .work-cards .work-content p {
+    font-size: 12.8px;
+    font-weight: 400;
+}
+#work .work-cards .work-content span {
+    color: #0078FF;
+}
+#work .work-item img {
+    transition: transform 1s;
+}
+#work .work-item:hover img {
+    transform:scale(1.3);
+}
+/* ========================================================= */
+#examples {
+    background-image: linear-gradient(rgb(36, 118, 220,0.75), rgb(36, 118, 220,0.75)), url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#examples img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+#examples .sec-img {
+    width: 100px;
+    height: 150px;
+    border-radius: 50%;
+}
+#examples p {
+    color: #ffffff;
+}
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+/* ======================================== */
+#blog .blog-title h2 {
+    font-size: 48px;
+}
+#blog .blog-title p::after {
+    content: '';
+    width: 3%;
+    height: 12%;
+    background-color: #0078FF;
+    position: absolute;
+    bottom: 0;
+    left: 48.5%;
+}
+#blog a {
+    color: #1E1E1E;
+}
+#blog .blog-cards .blog-item .inner .travel::after {
+    content: 'TRAVEL';
+    width: 20%;
+    height: 10%;
+    background-color: #0078FF;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -5%;
+    left: 40%;
+}
+#blog .blog-cards .blog-item .inner .web::after {
+    content: 'WEB DESIGN';
+    width: 25%;
+    height: 10%;
+    background-color: #0078FF;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -5%;
+    left: 35%;
+}
+#blog .blog-cards .blog-item .inner .blog-details img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+#blog .blog-cards .blog-item .inner .blog-info h3 {
+    transition: color 0.5s;
+}
+#blog .blog-cards .blog-item .inner .blog-info h3:hover {
+    color: #0078FF;
+}
+
+#blog .blog-cards .blog-item .inner .blog-details a span {
+    transition: color 0.5s;
+}
+#blog .blog-cards .blog-item .inner .blog-details a:hover span {
+    color: #0078FF;
+}
+/* ============================================================== */
+#contact {
+    background-image: linear-gradient(rgb(0, 120, 255,0.75), rgb(0, 120, 255,0.75)), url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#contact h2::after {
+    content: '';
+    width: 17%;
+    height: 2.5%;
+    background-color: #0078FF;
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+}
+#contact .contact-info button {
+    width: 28%;
+    height: 50px;
+    background-color: #0078FF;
+    color: white;
+    border: none;
+    transition: all 0.5s;
+}
+#contact .contact-info button:hover {
+    border: 5px solid #CDE1F8;
+    background-color: #3393FF;
+}
+#contact .contact-details {
+    color: #4E4E4E;
+}
+#contact .contact-details li i {
+    color: #0078FF;
+}
+#contact .contact-details .contact-social i {
+    font-size: 20px;
+}
+#contact .contact-details .contact-social .icon-ex i {
+    color: #1E1E1E;
+    transition: color 0.5s;
+}
+#contact .contact-details .contact-social .icon-ex {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid #0078FF;
+    transition: all 0.5s;
+}
+#contact .contact-details .contact-social .icon-ex:hover {
+    border: 3px solid #CDE1F8;
+    background-color: #3393FF;
+}
+#contact .contact-details .contact-social .icon-ex:hover i {
+    color: #ffffff;
+}
+.copy-right {
+    background-color: #0062D3;
+}
+.copy-right p{
+    color: white;
+}
+.copy-right a {
+    color: white;
+}
